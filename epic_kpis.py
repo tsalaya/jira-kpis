@@ -28,7 +28,10 @@ def get_epic_ux_rejections(epic_key, headers, from_status, to_status):
         print(f"Invalid HTML: {e}")
 
     found_rows = [td for td in tds if (
-            from_status.lower() in td.text.lower() and to_status.lower() in td.find_next_sibling('td').text.lower())]
+            from_status.lower() in td.text.lower()
+            and to_status.lower() in td.find_next_sibling('td').text.lower()
+            and "Status" in td.find_previous_sibling('td').text
+    )]
 
     _rejections[epic_key] = len(found_rows)
 
@@ -54,13 +57,13 @@ def build_headers():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    
+
     parser.add_argument("epics")
     parser.add_argument("from_status")
     parser.add_argument("to_status")
-    
+
     args = parser.parse_args()
-    
+
     epics = args.epics
     _from_status = args.from_status
     _to_status = args.to_status
