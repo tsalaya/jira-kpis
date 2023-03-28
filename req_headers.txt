@@ -1,0 +1,18 @@
+GET /browse/VHB-1669?page=com.atlassian.jira.plugin.system.issuetabpanels:changehistory-tabpanel&_=1679957042170 HTTP/1.1
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: vi,en-US;q=0.9,en;q=0.8
+Connection: keep-alive
+Cookie: sc_current_seller=1; _gcl_au=1.1.1430141473.1672728840; _ga=GA1.1.644171369.1672728840; _fbp=fb.1.1672728840266.575206105; _ga_CZZ4E8M1X1=GS1.1.1672728839.1.1.1672729091.3.0.0; ajs_user_id=a5e2b79159d2c24b453f7e6bc22ae796c6189f24a298c43099016d0979e16e88; ajs_anonymous_id=8073184c-e396-43f2-a30d-2742bd0fc7f3; ajs_group_id=BSZF-PDO7-ZMDK-35MR; AJS.conglomerate.cookie="|hipchat.inapp.links.first.clicked.tuan.nv=false"; slack.inapp.links.first.clicked.tuan.nv=false; amplitude_idundefinedteko.vn=eyJvcHRPdXQiOmZhbHNlLCJzZXNzaW9uSWQiOm51bGwsImxhc3RFdmVudFRpbWUiOm51bGwsImV2ZW50SWQiOjAsImlkZW50aWZ5SWQiOjAsInNlcXVlbmNlTnVtYmVyIjowfQ==; jira.editor.user.mode=wysiwyg; _ga_KX62VWBKZT=GS1.1.1679910902.4.0.1679910902.0.0.0; JSESSIONID=92491645CB0EBB7148976C145B73B956; atlassian.xsrf.token=BSZF-PDO7-ZMDK-35MR_c2cbfe08169e4014e32f32b6fb98c95406788504_lin; amplitude_id_cf620211dc906be4ab7c92f52766759dteko.vn=eyJkZXZpY2VJZCI6IjU5MWU5ODIyLWQxMDMtNGE1Yi1hNTQ5LTk5OTliMmE5YzJiOFIiLCJ1c2VySWQiOiJhNWUyYjc5MTU5ZDJjMjRiNDUzZjdlNmJjMjJhZTc5NmM2MTg5ZjI0YTI5OGM0MzA5OTAxNmQwOTc5ZTE2ZTg4Iiwib3B0T3V0IjpmYWxzZSwic2Vzc2lvbklkIjoxNjc5OTU2MDU4NTE1LCJsYXN0RXZlbnRUaW1lIjoxNjc5OTU3MDQ2MTIxLCJldmVudElkIjowLCJpZGVudGlmeUlkIjo0MjUyLCJzZXF1ZW5jZU51bWJlciI6NDI1Mn0=
+Host: jira.teko.vn
+Referer: https://jira.teko.vn/browse/VHB-1669
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.2.978 Yowser/2.5 Safari/537.36
+X-AUSERNAME: tuan.nv
+X-PJAX: true
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Yandex";v="23"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
