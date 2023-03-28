@@ -6,7 +6,7 @@ import httplib2
 from bs4 import BeautifulSoup as _bs
 
 
-def get_epic_ux_rejections(epic_key, headers):
+def get_epic_ux_rejections(epic_key, headers, from_status, to_status):
     from time import time
     # get current time in milliseconds
     milliseconds = int(time() * 1000)
@@ -28,7 +28,7 @@ def get_epic_ux_rejections(epic_key, headers):
         print(f"Invalid HTML: {e}")
 
     found_rows = [td for td in tds if (
-            "UX REVIEW" in td.text and "UX Design" in td.find_next_sibling('td').text)]
+            from_status.lower() in td.text.lower() and to_status.lower() in td.find_next_sibling('td').text.lower())]
 
     _rejections[epic_key] = len(found_rows)
 
@@ -54,15 +54,22 @@ def build_headers():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    
     parser.add_argument("epics")
+    parser.add_argument("from_status")
+    parser.add_argument("to_status")
+    
     args = parser.parse_args()
+    
     epics = args.epics
+    _from_status = args.from_status
+    _to_status = args.to_status
 
     # epic_keys = "TG-96,VHB-1669".split(",")
     epic_keys = epics.split(",")
     results = {}
     for k in epic_keys:
-        rejections = get_epic_ux_rejections(k, headers=build_headers())
+        rejections = get_epic_ux_rejections(k, headers=build_headers(), from_status=_from_status, to_status=_to_status)
         results[k] = rejections[k]
 
     print(results)
